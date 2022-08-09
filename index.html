@@ -24,8 +24,8 @@
             </div>
             <div class="right">
                 <div class="list">
-                    <span class="navItem">01.HISTORY</span>
-                    <span class="navItem">02.TEAM</span>
+                    <a href="#history" class="navItem">01.HISTORY</a>
+                    <a href="#team" class="navItem">02.TEAM</a>
                 </div>
             </div>
         </div>
@@ -38,14 +38,14 @@
             </div>
             <div class="cnavbar-right">
                 <div class="list">
-                    <span class="navItem cnavItem">01.HISTORY</span>
-                    <span class="navItem cnavItem">02.TEAM</span>
+                    <a href="#history" class="navItem cnavItem">01.HISTORY</a>
+                    <a href="#team" class="navItem cnavItem">02.TEAM</a>
                 </div>
             </div>
 
         </div>
         <div class="cbackground">
-            <div class="ctop">
+            <div class="ctop" id="history">
                 <div class="cImage">
                     <img src="img/01history.png" alt="" class="01history">
                 </div>
@@ -57,139 +57,69 @@
                 </div>
             </div>
             <div class="cbottom">
-                <div class="carousel-bg center">
-                    <div class="thumb-container center">     
-                        <div>
-                          <!-- Carousel from bootsnipp by mushkaa https://bootsnipp.com/snippets/exVWQ -->
-                            <div class="row blog">
-                            <div class="col-md-12">                        
-                            <div id="blogCarousel" class="carousel slide" data-ride="carousel">                        
-                            <ol class="carousel-indicators">                        
-                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>                        
-                            <li data-target="#blogCarousel" data-slide-to="1"></li>                        
-                            <li data-target="#blogCarousel" data-slide-to="2"></li>                        
-                            </ol>
-                            
-                            <!-- Carousel items -->
-                            
-                            <div class="carousel-inner">                        
-                            <div class="carousel-item active">                        
-                            <div class="row">                        
-                            <div class="col-md-3">                        
-                            <a href="#">                        
-                            <img src="/img/thumb1.png" alt="Image" style="max-width:100%;">                        
-                            </a>                        
-                            </div>                        
-                            <div class="col-md-3">                        
-                            <a href="#">                        
-                            <img src="/img/thumb2.png" alt="Image" style="max-width:100%;">                        
-                            </a>                        
-                            </div>                        
-                            <div class="col-md-3">                        
-                            <a href="#">                        
-                            <img src="/img/thumb1.png" alt="Image" style="max-width:100%;">                        
-                            </a>                        
-                            </div>                        
-                            <div class="col-md-3">                        
-                            <a href="#">                        
-                            <img src="/img/thumb2.png" alt="Image" style="max-width:100%;">                        
-                            </a>                        
-                            </div>                        
-                            </div>                        
-                            <!--.row-->
-                            
-                            </div>                        
-                            <!--.item-->                        
-                            <div class="carousel-item">                        
-                            <div class="row">                        
-                            <div class="col-md-3">                        
-                            <a href="#">                        
-                            <img src="/images/thumb1.png" alt="Image" style="max-width:100%;">                        
-                            </a>                        
-                            </div>                        
-                            <div class="col-md-3">                        
-                            <a href="#">                        
-                            <img src="/images/thumb2.png" alt="Image" style="max-width:100%;">                        
-                            </a>                        
-                            </div>                        
-                            <div class="col-md-3">                        
-                            <a href="#">                        
-                            <img src="/images/thumb1.png" alt="Image" style="max-width:100%;">                        
-                            </a>                        
-                            </div>
-                            
-                            <div class="col-md-3">                        
-                            <a href="#">                        
-                            <img src="/images/thumb2.png" alt="Image" style="max-width:100%;">                        
-                            </a>                        
-                            </div>                        
-                            </div>
-                            
-                            <!--.row-->
-                            
-                            </div>
-                            <div class="carousel-item">                        
-                            <div class="row">                        
-                            <div class="col-md-3">                        
-                            <a href="#">                        
-                            <img src="/img/thumb1.png" alt="Image" style="max-width:100%;">                        
-                            </a>                        
-                            </div>                        
-                            <div class="col-md-3">                        
-                            <a href="#">                        
-                            <img src="/img/thumb2.png" alt="Image" style="max-width:100%;">                        
-                            </a>                        
-                            </div>                        
-                            <div class="col-md-3">                        
-                            <a href="#">                        
-                            <img src="/img/thumb1.png" alt="Image" style="max-width:100%;">                        
-                            </a>                        
-                            </div>
-                            
-                            <div class="col-md-3">                        
-                            <a href="#">                        
-                            <img src="/img/thumb2.png" alt="Image" style="max-width:100%;">                        
-                            </a>                        
-                            </div>                        
-                            </div>
-                            
-                            <!--.row-->
-                            
-                            </div>
-                            
-                            <!--.item-->
-                            
-                            </div>
-                            
-                            <!--.carousel-inner-->
-                            
-                            </div>
-                            
-                            <!--.Carousel-->
-                            
-                            </div>                        
-                            </div>                        
-                            </div>
-                                
+                <div class="slider">
+                    <input type="radio" name="toggle" id="btn-1" checked>
+                    <input type="radio" name="toggle" id="btn-2">
+                  
+                    <div class="slider-controls">
+                      <label for="btn-1"></label>
+                      <label for="btn-2"></label>
+                      
                     </div>
-                </div>
+                  
+                    <ul class="slides">
+                      <li class="slide">
+                        <p class="slide-image">
+                          <img src="/img/thumb1.png" alt="stuff" width="280" height="240">
+                          <img src="/img/thumb2.png" alt="stuff" width="280" height="240">
+                          <img src="/img/thumb1.png" alt="stuff" width="280" height="240">
+                          <img src="/img/thumb2.png" alt="stuff" width="280" height="240">
+                        </p>
+                      </li>
+                      <li class="slide">
+                        <p class="slide-image">
+                            <img src="/img/thumb2.png" alt="stuff" width="280" height="240">
+                            <img src="/img/thumb1.png" alt="stuff" width="280" height="240">
+                            <img src="/img/thumb2.png" alt="stuff" width="280" height="240">
+                            <img src="/img/thumb1.png" alt="stuff" width="280" height="240">
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
             </div>
         </div>
     </div>
-    <div class="cliembContainer">
+    <div class="cliembContainer"id='team' >
         <img src="/img/02climb.png" alt="" class="climbImage">
-        <span class="cliembText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, amet dolores. Sequi facilis laudantium sed doloribus eius totam cumque magnam excepturi voluptatem possimus corrupt</span>
+        <span class="cliembText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, amet dolores. Sequi
+            facilis laudantium sed doloribus eius totam cumque magnam excepturi voluptatem possimus corrupt</span>
     </div>
     <div class="BOTTEM">
         <div class="bTop">
             <div class="bList">
-                <span class="bItem">MOUNTAIN 1</span>
-                <span class="bItem">MOUNTAIN 2</span>
+                <span onclick="myFunction1()" id="mountain1" class="bItem">MOUNTAIN 1</span>
+                <span onclick="myFunction2()" id="mountain2" class="bItem">MOUNTAIN 2</span>
             </div>
 
         </div>
         <div class="bCenters">
-            <img src="/img/tab1.png" alt="" class="bootomtabs">
+            <img src="/img/tab1.png" alt="" id="myImg" class="bootomtabs">
+
+
+            <script>
+                var img_array = ["/img/tab1.png","/img/tab2.png"];
+                function myFunction1() {
+                    document.getElementById("myImg").src = img_array[0];
+                    document.getElementById('mountain1').style.backgroundColor = 'azure';
+                    document.getElementById('mountain2').style.backgroundColor = 'cadetblue';
+
+                }
+                function myFunction2() {
+                    document.getElementById("myImg").src = img_array[1];
+                    document.getElementById('mountain1').style.backgroundColor = 'cadetblue';
+                    document.getElementById('mountain2').style.backgroundColor = 'azure';
+                }
+            </script>
             <img src="/img/schedule-content.png" alt="" class="scheduleImage">
         </div>
         <div class="bBottom">
@@ -208,6 +138,7 @@
         </div>
 
     </div>
+    
 </body>
 
 </html>
